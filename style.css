@@ -1,0 +1,390 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* For All element Styling */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Header For All Pages */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .4s ease;
+    padding: 0.6rem 4rem;
+   
+}
+.header h4{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: rgb(211, 0, 0);
+    transition: all 0.4s ease-in-out;
+    text-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+.header h4:hover{
+    color: white;
+}
+.header .nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+.header .list{
+    margin: 0 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.list{
+    color: rgb(211, 0, 0);
+    text-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+
+}
+.list:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+
+/* Section-1 */
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+.section-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./college.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
+
+.section-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 2rem ;
+    justify-content: center;
+    width: 70%;
+    height: 70vh;
+    color: white;
+    
+}
+
+.intro h1{
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0.8rem 0.8rem 1rem rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.intro .name-college{
+    color: rgb(211, 0, 0);
+    font-size: 4rem;
+}
+.intro p{
+    color: #eee;
+    font-size: 1rem;
+    line-height: 28px;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    width: 70%;
+}
+
+.intro .name{
+    color: rgb(211, 0, 0);
+    font-size: 1.1rem;
+}
+
+.btn-container{
+    margin-top: 2rem;
+}
+
+.btn{
+    width: 7rem;
+    height: 3rem;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(211, 0, 0);
+    transition: all 0.4s ease;
+
+}
+.btn:hover{
+    letter-spacing: 4px;
+    width: 7.5rem;
+}
+.btn:active{
+    transform: scale(0.94) translateY(-2px);
+}
+
+/* End-Section-1 */
+
+/* SECTION-2 */
+
+.section-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
+.section-2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
+    bottom: 10%;
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index: 10;
+
+}
+.contact-name{
+    font-size: 4.6rem;
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+    color: rgb(248, 0, 0);
+    font-weight: bold;
+    perspective: 100rem;
+    padding: 2rem 5rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    backdrop-filter: blur(2px);
+}
+
+.contact-form {
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: all .5s;
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+    margin: 1rem;
+    background: black;
+    color: rgb(211, 0, 0);
+    padding: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem .2rem #ddd;
+}
+
+.contact-form textarea {
+    max-height: 10rem;
+    min-height: 7rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+    background-color:rgb(211, 0, 0);
+    color: white;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: background-color 5s;
+
+}
+
+
+
+/* END-SECTION-2 */
+
+
+/* SECTION-3 */
+
+
+
+
+
+.section-3{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -2;
+    padding: 3rem 2rem;
+}
+.section-3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.users{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    height: 70vh;
+    /* height: 400px; */
+    padding: 3rem 1rem;
+    
+    
+}
+.user{
+    width: 25%;
+    height: 90%;
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    margin: 0 0.5rem;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+.user .intro h3{
+    font-size: 1.1rem;
+}
+.user .intro .para{
+    font-size: 0.7rem;
+}
+.user .userbtn{
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(248, 0, 0);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    position: absolute;
+    font-size: 1,1rem;
+    bottom: 0;
+}
+.user img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-name{
+    margin: 2rem auto 1rem;
+    font-size: 3.5rem;
+    color: white;
+    perspective: 10rem;
+    font-weight: 700;
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.6);
+
+}
+
+/* END-SECTION-3 */
+
+@media (max-width:800px){
+    html{
+        font-size: 60%;
+    }
+    .contact-name{
+        font-size: 3rem;
+        padding: 2rem 2rem;
+    }
+    .section-3{
+        /* min-height: auto; */
+        padding: 10rem 2rem;
+    
+    }
+    .users{
+        /* flex-direction: column; */
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .intro{
+        width: 90%;
+    }
+    .user{
+        max-height: 300px;
+        width: 80%;
+        margin: 3rem auto;
+    }
+    .user .intro h3{
+        font-size: 3rem;
+    }
+    .user .intro .para{
+        font-size: 1rem;
+    }
+}
